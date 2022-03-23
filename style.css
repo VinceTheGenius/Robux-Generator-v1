@@ -1,0 +1,127 @@
+body{
+  font-family: 'Montserrat';
+  background-color: #251d27;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Righteous'
+}
+
+.soon {
+  color: whitesmoke;
+  font-size: 400%;
+}
+
+.title {
+  background: -webkit-linear-gradient(#fbad29,#fb8634);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 500%;
+}
+
+.slogan {
+  color:whitesmoke;
+  font-size: 200%;
+}
+
+.start {
+  border: 2px solid #f1f1f1;
+  outline: none;
+  background: transparent;
+  font-size: 30px;
+  padding: 20px;
+  width: 300px;
+  color: #f1f1f1;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: 'Montserrat';
+}
+
+.start:hover {
+  transition: all 0.3s ease-in-out;
+  background: #f1f1f1;
+  color: #333;
+}
+
+.generate {
+  border: 2px solid #f1f1f1;
+  outline: none;
+  background: transparent;
+  font-size: 25px;
+  padding: 8px;
+  width: 225px;
+  color: #f1f1f1;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: 'Montserrat';
+}
+
+.generate:hover {
+  transition: all 0.2s ease-in-out;
+  background: #f1f1f1;
+  color: #333;
+}
+
+input {
+  font-family: 'Montserrat';
+  padding: 5px 16px;
+  border-color: #fbad29;
+  background-color: white;
+  width: 20%;
+}
+
+#p{
+  margin:0px;
+}
+
+img {
+  float: left;
+  position: fixed;
+  top:20px;
+  left:20px;
+  width:100px;
+  height: 100px;
+}
+
+.roblox {
+  margin-top: 3%;
+  font-size: 160%;
+  color: whitesmoke;
+}
+
+a {
+  color: #fbad29;
+}
+
+.progress {
+  background: rgba(255,255,255,0.1);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 40px;
+  width: 500px;
+  text-align: center;
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.progress-value {
+  text-align: center;
+  animation: load 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #fff;
+  height: 30px;
+  width: 0;
+}
+
+ 
+
+

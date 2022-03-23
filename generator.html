@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Robux Generator</title>
+    <meta name="language" content="fr">
+    <link rel="icon" href="images/favicon.png"> 
+    <meta name="description" content="Free Robux Generator">
+    <meta name="author" content="Duboujnou & Fox">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+      function preventLetterKey(name){
+        if(
+          name!="1" &&
+          name!="2" &&
+          name!="3" &&
+          name!="4" &&
+          name!="5" &&
+          name!="6" &&
+          name!="7" &&
+          name!="8" &&
+          name!="9" &&
+          name!="0" &&
+          name!="Backspace"
+          )
+          event.preventDefault()
+      }
+    </script>
+  </head>
+
+  <body>
+
+    <a href="index.html"><img src="images/favicon.png"></a>
+    <h1 class="title">Generator</h1>
+    <br><br>
+    <form name="generateForm" method="GET" action="progress.html" onsubmit='
+    pseudoQuery = this.pseudo.value
+    robuxQuery = this.robux.value
+    event.preventDefault();
+    document.body.innerHTML += `<br><div style="color:white">Please accept notification, it will prevents you when the transfer will be finished.</div><br><div style="color:white">Veuillez accepter la notification, elle vous préviendra lorsque le transfert sera terminé.</div>`
+    Notification.requestPermission( function(status) {
+        console.log(status);
+        if(status=="granted"){
+          location.href = "progress.html?pseudo="+pseudoQuery+"&robux="+robuxQuery
+        }
+      });
+    '>
+      <input name="pseudo" type="text" placeholder="Roblox name / Nom Roblox" required><br><br>
+      <input type="number" name="robux" min="0" onkeydown="preventLetterKey(event.key)"  placeholder="How much ? / Combien ?" required><br><br><br>
+      <input type="submit" value="Generate" class="start generate" style="width:auto">
+    </form>
+
+  </body>
+</html>
