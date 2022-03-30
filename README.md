@@ -1,4 +1,4 @@
-# New Robux Generator
+# Robux Generator
 
 This app is a (fake) robux generator for Roblox players ¯\_(ツ)_/¯
 
